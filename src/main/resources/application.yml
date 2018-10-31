@@ -1,0 +1,22 @@
+
+
+server:
+  port: 81
+
+logging:
+  level:
+    com.leyou:
+      debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mybatis
+    username: root
+    password: root
+mybatis:
+  # mybatis 别名扫描
+  type-aliases-package: com.leyou.pojo
+  # mapper.xml文件位置,如果没有映射文件，请注释掉
+  #mapper-locations: classpath:mappers/**/*.xml
+
+
